@@ -1,0 +1,320 @@
+/* 초기화 */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    min-width: 1200px;
+}
+/* header */
+.header_wrap {
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2);
+}
+#main_header {
+    width: 1200px; height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+#main_header > h1 {
+    position: absolute;
+    left: 100px;
+    line-height: 100px;
+}
+#gnb {
+    position: absolute;
+    right: 0; 
+    line-height: 100px;
+}
+#gnb > ul > li {
+    float: left;
+    /* display: inline-block; */
+    margin-right: 24px;
+    margin-left: 24px;
+    
+}
+#gnb > ul > li:last-child {margin-right: 0;}
+
+#gnb > ul > li a {color: #828282; font-weight: bold; width: 100px; height: 100px;}
+#gnb > ul > li a:hover {
+    color: #007b3b; font-weight: bold;
+    transition-duration: 0.2s;
+    border-bottom: 2px solid #007b3b;
+    
+}
+
+    
+.gnb-icon {
+    width: 18px;
+    height: 18px;
+    right: 0;
+    top: 20px;
+    margin-right: 0px;
+    margin-left: -15px;
+}
+/* main_visual */
+#main_visual {
+    position: relative;
+    width: 1200px;
+    height: 595px;
+    /* outline: 2px solid red; */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* notice */
+#notice > .notice_container{
+    background-color: #007b3b;
+    width: 1200px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #fff;
+}
+#notice > .notice_container .title {
+    float: left;
+    font-size: 18px;
+    margin-left: 102px;
+}
+#notice > .notice_container .title span {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#notice > .notice_container .text {
+    float: left;
+    font-size: 18px;
+}
+#notice > .notice_container .arrow_top {
+    float: right;
+    margin-top: 17px;
+    margin-right: 102px;
+    width: 35px;
+    height: 35px;
+}
+/* notice2 */
+#notice > .notice_con2{
+    background-color: #064e28;
+    width: 1200px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #fff;
+}
+#notice > .notice_con2 .title {
+    float: left;
+    font-size: 18px;
+    margin-left: 102px;
+}
+#notice > .notice_con2 .title span {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#notice > .notice_con2 .text {
+    float: left;
+    font-size: 18px;
+}
+#notice > .notice_con2 .arrow_bot {
+    float: right;
+    margin-top: 17px;
+    margin-right: 102px;
+    width: 35px;
+    height: 35px;
+}
+#con_header{
+    width: 1200px;
+    height: 110px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#con_header > .conHead h1{
+    margin-top:45px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+#con_header > .conHead h3{
+    font-size: 14px;
+}
+
+#con_header > .intHead h3{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/*메인 컨텐츠*/
+#main_content{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#main_content > #row > .col{
+    width: 386.66px;
+    float: left;
+    margin-right: 20px;
+    height: 355px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+#sub_content > #row > .col{
+    width: 373px;
+    float: left;
+    margin-right: 20px;
+    height: 355px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#main_content > #row{overflow: hidden;}
+#sub_content > #row > .col:first-child{
+    margin-left: 20px;
+}
+
+#main_content > #row > .col:last-child,#sub_content > #row > .col:last-child{
+    margin-right: 0px;
+}
+#main_content > #row > .col a{
+    color: black; font-size: 20px; font-weight: bold;
+}
+#main_content > #row > .col p{
+    font-size: 14px; margin-top: 20px;
+}
+#main_content > #row > .col > .col-text{
+    margin-top: 10px;
+}
+
+#main_content > #row > .col > .col-text > .btn-more{
+    font-size: 24px;
+}
+#main_content > #row > .col > .col-text > p{
+    font-size: 14px;
+}
+
+.cover{
+    opacity: 0;
+}
+.btn-cover{margin-top: 150px;}
+#main_content >#row > .col .btn-cover a{color: white;  font-size: 14px; line-height: 12px;}
+#main_content > #row > .col .cover .btn-cover{
+    border: 2px solid white;
+    color: white;
+    background: black;
+    padding: 15px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#main_content > #row > .col:hover .cover{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(45, 45, 45, 0.85);
+    opacity: 1;
+    transition: 0.2s;
+    color: white;
+    transition: 0.4s;
+}
+
+/*서브 컨텐츠영역*/
+#full-screenCon{
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 540px;
+    text-align: center;
+    margin: 0 auto;
+}
+#full-screenCon h1{
+    padding: 40px;
+    color: white;
+}
+#sub_content > #row > .col >.col-text .btn-more{
+    color: white;
+    font-size: 24px;
+}
+#sub_content > #row > .col >.col-text{
+    margin-top: 15px;
+}
+
+#sub_content > #row > .col .btn-pl{
+    color: white;
+    background: black;
+    border: 1px solid white;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#sub_content > #row > .col .btn-pl:hover{
+    color: black;
+    background: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/*푸터 영역*/
+
+#footer{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    border-top: 2px solid #717171;
+    
+}
+.footer-nav{
+    margin-left: 10px;
+    height: 50px;
+}
+.footer-nav > li > a >span{
+    color: #666;
+    font-weight: lighter;
+}
+.footer-nav > li{
+    float: left;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+#footer > .footer_logo{
+    width: 1200px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    
+    padding-top: 10px;
+    background: #b7b7b7;
+}
+.footer-nav > li a{
+    color: black;
+}
+#footer > .footer_logo img{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+#footer > .footer_logo p{
+    float: right;
+    font-size: 12px;
+    margin-right: 250px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+
